@@ -12,5 +12,10 @@ Show empty space after lines.
 - `:ShowEmptyDetachFromBuffer`: Disable for buffer.
 - `:ShowEmptyToggleOnBuffer`: Toggle.
 
+Change color (same as for `'listchars'`):
+```vim
+highlight Whitespace guifg=#dddddd
+```
+
 You may also would like to set some character for "eol", e.g. `:set list
 listchars+=eol:·`, otherwise one extra space will be shown between the line and the dots.
