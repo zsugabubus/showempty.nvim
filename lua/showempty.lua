@@ -31,7 +31,7 @@ return {
 		-- vim.api.nvim_win_get_width(0)
 		-- nvim.ex.augroup("END")
 		local fillchar = vim.api.nvim_get_option('listchars'):match('space:([^,]+)') or '·';
-		local CHUNKS = {{(fillchar):rep(500), "NonText"}}
+		local CHUNKS = {{(fillchar):rep(500), "Whitespace"}}
 
 		vim.api.nvim_buf_clear_namespace(buffer, ns, 0, -1)
 		for lnum=0,vim.api.nvim_buf_line_count(buffer)-1 do
