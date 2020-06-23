@@ -1,13 +1,4 @@
 local ns = vim.api.nvim_create_namespace('showempty')
-
-function rep(str, count)
-	local ret = ""
-	for i=1,count do
-		ret = ret .. str
-	end
-	return ret
-end
-
 local attached = {}
 
 local function detach_from_buffer(buffer)
